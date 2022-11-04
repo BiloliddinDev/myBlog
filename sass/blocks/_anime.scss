@@ -1,0 +1,69 @@
+.div {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.61);
+  display: grid;
+  place-items: center;
+}
+
+.cricle {
+  position: relative;
+  width: 60vh;
+  height: 60vh;
+  background-image: linear-gradient(#33ccff, #ff0066);
+  border-radius: 50%;
+  animation: animate 0.5s linear infinite;
+}
+
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cricle::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  bottom: 35px;
+  left: 35px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.61);
+}
+
+.cricle span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#33ccff, #ff0066);
+  border-radius: 50%;
+}
+
+.cricle span:nth-child(1) {
+  filter: blur(5px);
+}
+
+.cricle span:nth-child(2) {
+  filter: blur(10px);
+}
+
+.cricle span:nth-child(3) {
+  filter: blur(20px);
+}
+
+.cricle span:nth-child(4) {
+  filter: blur(55px);
+}
+
+.fit {
+  display: none;
+}
