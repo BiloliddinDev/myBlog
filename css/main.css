@@ -513,4 +513,14 @@ template {
 
 .fit {
   display: none;
+}
+
+.hero {
+  position: absolute;
+  margin-top: 90px;
+}
+.hero__gallery {
+  position: relative;
+  top: 100px;
+  left: 400px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,9 @@
+.hero{
+    position: absolute;
+    margin-top: 90px;
+    &__gallery{
+        position: relative;
+        top:100px;
+        left: 400px;
+    }
+}
